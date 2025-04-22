@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Node.js Web Project</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9fafb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      flex-direction: column;
+    }
+    #loadTableBtn {
+      background-color: #2563eb;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+    #loadTableBtn:hover {
+      background-color: #1e40af;
+    }
+    #data-table-body {
+      margin-top: 20px;
+      width: 400px;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+    .row {
+      display: flex;
+      border-bottom: 1px solid #d1d5db;
+    }
+    .row:last-child {
+      border-bottom: none;
+    }
+    .cell {
+      flex: 1;
+      padding: 10px;
+      border-right: 1px solid #d1d5db;
+      box-sizing: border-box;
+    }
+    .cell:last-child {
+      border-right: none;
+    }
+    .header {
+      background-color: #f3f4f6;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <button id="loadTableBtn">click</button>
+  <div id="data-table-body"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
