@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Node.js Web Project - Table Version</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9fafb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      flex-direction: column;
+    }
+    #loadTableBtn {
+      background-color: #2563eb;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+    #loadTableBtn:hover {
+      background-color: #1e40af;
+    }
+    table {
+      margin-top: 20px;
+      width: 400px;
+      border-collapse: collapse;
+      border: 1px solid #d1d5db;
+      border-radius: 6px;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+    th, td {
+      border: 1px solid #d1d5db;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #f3f4f6;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <button id="loadTableBtn">click</button>
+  <table id="data-table" style="display:none;">
+    <thead>
+      <tr>
+        <th>Column 11</th>
+        <th>Column 2</th>
+      </tr>
+    </thead>
+    <tbody id="data-table-body">
+      <!-- Data rows will be inserted here by script-table.js -->
+    </tbody>
+  </table>
+
+  <script src="script-table.js"></script>
+</body>
+</html>
